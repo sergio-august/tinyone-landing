@@ -33,15 +33,11 @@ h1, h2, h3, h4, h5, h6 {
 
 h1, h2 {
     font-size: 32px;
-
-    // line-height: 18px;
 }
 
 h3 {
     font-size: 22px;
     font-weight: 400;
-
-    // line-height: 24px;
 }
 
 .header {
@@ -50,21 +46,36 @@ h3 {
 }
 
 .menu {
-    display: block;
-    padding-top: 1.2em;
+    padding-left: 0;
 
-    &__item {
-        display: block;
+    button {
+        outline: none;
+    }
 
-        a {
-            display: block;
-            color: $black;
-            font-size: 22px;
-            font-weight: 700;
-            text-decoration: none;
+    &__items {
+        padding-left: 1em;
+        border-left: 3px solid black;
 
-            &:hover {
-                text-decoration: underline;
+        &__item {
+            padding-right: 3.5vw;
+
+            &:last-child {
+                padding-right: 2vw;
+            }
+
+            a {
+                display: block;
+                color: $black;
+                font-size: 22px;
+                font-weight: 700;
+                text-decoration: none;
+
+                &:hover {
+                    color: $black;
+                    &:after {
+                        content: " <"
+                    }
+                }
             }
         }
     }
@@ -72,6 +83,7 @@ h3 {
 
 .offer {
     padding: 61px 0 107px;
+    text-align: center;
 
     &__intro {
         color: $deepgrey;
@@ -93,6 +105,7 @@ h3 {
         font-size: 42px;
         font-weight: 400;
         margin-top: 41px;
+        margin-bottom: 41px;
 
         &__item {
             margin-right: 38px;
@@ -112,7 +125,8 @@ h3 {
         text-align: center;
 
         img {
-            width: auto;
+            max-width: 80%;
+            height: auto;
         }
     }
 }
@@ -188,9 +202,12 @@ h3 {
     background-color: $black;
     padding-top: 56px;
     padding-bottom: 96px;
+
     &__company {
         text-align: center;
         color: $white;
         line-height: 20px;
     }
 }
+
+@import "./media.scss";

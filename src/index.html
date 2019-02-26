@@ -19,32 +19,61 @@
         />
         <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>" />
         <title>Tinyone</title>
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <header class="header" id="header">
             <div class="container">
-                <div class="row d-flex align-items-center">
-                    <div class="col-md-3">
-                        <img src="<%= require('./assets/images/logo.png') %>" alt="Tinyone" class="logo" />
+                <nav class="menu navbar navbar-expand-md">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="<%= require('./assets/images/logo.png') %>"
+                            alt="Tinyone"
+                            class="d-inline-block menu__logo"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#myNavbar"
+                        aria-controls="myNavbar"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="menu__items navbar-nav ml-auto">
+                            <li class="nav-item menu__items__item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item menu__items__item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li>
+                            <li class="nav-item menu__items__item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="col-md-6 col-lg-5 ml-auto">
-                        <nav>
-                            <ul class="menu d-flex justify-content-around">
-                                <li class="menu__item">
-                                    <a href="#">Features</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#">Support</a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#">Blog</a>
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+                </nav>
+
                 <div class="row d-flex align-items-center offer">
-                    <div class="col-md-6">
+                    <div class="col-12 col-md-6">
                         <h1 class="offer__title">Inspire your inspiration</h1>
                         <p class="offer__intro">
                             Simple to use for your app, products<br />showcase and your inspiration
@@ -54,7 +83,7 @@
                             tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat
                             tempor. In quis arcu et eros porta lobortis sit
                         </p>
-                        <ul class="offer__links d-flex">
+                        <ul class="offer__links d-flex justify-content-center justify-content-md-start">
                             <li class="offer__links__item">
                                 <a href="#"><i class="fab fa-apple"></i></a>
                             </li>
@@ -66,7 +95,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-6 col-lg-5 ml-auto offer__image">
+                    <div class="col-12 col-md-6 col-lg-5 ml-auto offer__image">
                         <img
                             src="<%= require('./assets/images/tablet.png') %>"
                             alt="Tinyone Application"
@@ -80,7 +109,7 @@
         <section class="features" id="features">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 m-auto features__title">
+                    <div class="col-md-10 mx-auto features__title">
                         <h2>Tinyone features</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
@@ -89,10 +118,10 @@
                     </div>
                 </div>
                 <div class="row features__items">
-                    <div class="col-md-1 features__items__icons">
+                    <div class="col-sm-2 col-lg-1 features__items__icons">
                         <i class="fa fa-tablet"></i>
                     </div>
-                    <div class="col-md-3 features__items__infos">
+                    <div class="col-sm-10 col-md-4 col-lg-3 features__items__infos">
                         <h3>Fully Responsive</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
@@ -100,10 +129,10 @@
                         </p>
                     </div>
 
-                    <div class="col-md-1 features__items__icons">
+                    <div class="col-sm-2 col-lg-1 features__items__icons">
                         <i class="fa fa-lemon"></i>
                     </div>
-                    <div class="col-md-3 features__items__infos">
+                    <div class="col-sm-10 col-md-4 col-lg-3 features__items__infos">
                         <h3>Fully Layered PSD</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
@@ -111,10 +140,10 @@
                         </p>
                     </div>
 
-                    <div class="col-md-1 features__items__icons">
+                    <div class="col-sm-2 col-lg-1 features__items__icons">
                         <i class="fa fa-folder"></i>
                     </div>
-                    <div class="col-md-3 features__items__infos">
+                    <div class="col-sm-10 col-md-4 col-lg-3 features__items__infos">
                         <h3>Font Awesome Icons</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
@@ -122,10 +151,10 @@
                         </p>
                     </div>
 
-                    <div class="col-md-1 features__items__icons">
+                    <div class="col-sm-2 col-lg-1 features__items__icons">
                         <i class="fa fa-code"></i>
                     </div>
-                    <div class="col-md-3 features__items__infos">
+                    <div class="col-sm-10 col-md-4 col-lg-3 features__items__infos">
                         <h3>HTML3 & CSS3</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
@@ -133,10 +162,10 @@
                         </p>
                     </div>
 
-                    <div class="col-md-1 features__items__icons">
+                    <div class="col-sm-2 col-lg-1 features__items__icons">
                         <i class="fa fa-envelope"></i>
                     </div>
-                    <div class="col-md-3 features__items__infos">
+                    <div class="col-sm-10 col-md-4 col-lg-3 features__items__infos">
                         <h3>Email Template</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
@@ -144,10 +173,10 @@
                         </p>
                     </div>
 
-                    <div class="col-md-1 features__items__icons">
+                    <div class="col-sm-2 col-lg-1 features__items__icons">
                         <i class="fa fa-bookmark"></i>
                     </div>
-                    <div class="col-md-3 features__items__infos">
+                    <div class="col-sm-10 col-md-4 col-lg-3 features__items__infos">
                         <h3>Free to download</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
@@ -161,7 +190,7 @@
         <section class="communicate" id="communicate">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 m-auto communicate__title">
+                    <div class="col-md-10 mx-auto communicate__title">
                         <h2 class="yellow">Keep in touch with us</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
@@ -170,7 +199,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-10 m-auto">
+                    <div class="col-md-10 mx-auto">
                         <form action="#" class="form">
                             <input type="email" placeholder="Enter your email to update" class="form__input" />
                             <button type="button" class="form__button">SUBMIT</button>
@@ -184,9 +213,9 @@
             <div class="container">
                 <div class="row">
                     <p class="col-sm-4 m-auto footer__company">
-                            HALOVIETNAM LTD<br>
-                            66, Dang Van ngu, Dong Da<br>
-                            Hanoi, Vietnam
+                        HALOVIETNAM LTD<br />
+                        66, Dang Van ngu, Dong Da<br />
+                        Hanoi, Vietnam
                     </p>
                 </div>
             </div>
