@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+            integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>" />
+        <title>Tinyone</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-3">
+                        <img src="<%= require('./assets/images/logo.png') %>" alt="Tinyone" class="logo" />
+                    </div>
+                    <div class="col-md-6 col-lg-5 ml-auto">
+                        <nav>
+                            <ul class="menu d-flex justify-content-around">
+                                <li class="menu__item">
+                                    <a href="#">Features</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Support</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#">Blog</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row d-flex align-items-center offer">
+                    <div class="col-md-6">
+                        <h1 class="offer__title">Inspire your inspiration</h1>
+                        <p class="offer__intro">
+                            Simple to use for your app, products<br />showcase and your inspiration
+                        </p>
+                        <p class="offer__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                            tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat
+                            tempor. In quis arcu et eros porta lobortis sit
+                        </p>
+                        <ul class="offer__links d-flex">
+                            <li class="offer__links__item">
+                                <a href="#"><i class="fab fa-apple"></i></a>
+                            </li>
+                            <li class="offer__links__item">
+                                <a href="#"><i class="fab fa-android"></i></a>
+                            </li>
+                            <li class="offer__links__item">
+                                <a href="#"><i class="fab fa-windows"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-5 ml-auto offer__image">
+                        <img
+                            src="<%= require('./assets/images/tablet.png') %>"
+                            alt="Tinyone Application"
+                            class="tablet"
+                        />
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="features" id="features">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 m-auto features__title">
+                        <h2>Tinyone features</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                            tristique bibendum. Donec rutrum sed sem quis venenatis.
+                        </p>
+                    </div>
+                </div>
+                <div class="row features__items">
+                    <div class="col-md-1 features__items__icons">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <div class="col-md-3 features__items__infos">
+                        <h3>Fully Responsive</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                            tristique bibendum.
+                        </p>
+                    </div>
+
+                    <div class="col-md-1 features__items__icons">
+                        <i class="fa fa-lemon"></i>
+                    </div>
+                    <div class="col-md-3 features__items__infos">
+                        <h3>Fully Layered PSD</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                            tristique bibendum.
+                        </p>
+                    </div>
+
+                    <div class="col-md-1 features__items__icons">
+                        <i class="fa fa-folder"></i>
+                    </div>
+                    <div class="col-md-3 features__items__infos">
+                        <h3>Font Awesome Icons</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                            tristique bibendum.
+                        </p>
+                    </div>
+
+                    <div class="col-md-1 features__items__icons">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="col-md-3 features__items__infos">
+                        <h3>HTML3 & CSS3</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                            tristique bibendum.
+                        </p>
+                    </div>
+
+                    <div class="col-md-1 features__items__icons">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="col-md-3 features__items__infos">
+                        <h3>Email Template</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                            tristique bibendum.
+                        </p>
+                    </div>
+
+                    <div class="col-md-1 features__items__icons">
+                        <i class="fa fa-bookmark"></i>
+                    </div>
+                    <div class="col-md-3 features__items__infos">
+                        <h3>Free to download</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                            tristique bibendum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="communicate" id="communicate">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 m-auto communicate__title">
+                        <h2 class="yellow">Keep in touch with us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus
+                            tristique bibendum. Donec rutrum sed sem quis venenatis.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 m-auto">
+                        <form action="#" class="form">
+                            <input type="email" placeholder="Enter your email to update" class="form__input" />
+                            <button type="button" class="form__button">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+                    <p class="col-sm-4 m-auto footer__company">
+                            HALOVIETNAM LTD<br>
+                            66, Dang Van ngu, Dong Da<br>
+                            Hanoi, Vietnam
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+    </body>
+</html>
