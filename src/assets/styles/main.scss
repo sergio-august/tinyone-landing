@@ -56,27 +56,29 @@ h3 {
         padding-left: 1em;
         border-left: 3px solid black;
 
-        &__item {
+        li {
             padding-right: 3.5vw;
 
             &:last-child {
                 padding-right: 2vw;
             }
+        }
 
-            a {
-                display: block;
+        a {
+            display: block;
+            color: $black;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: none;
+
+            &:hover {
                 color: $black;
-                font-size: 22px;
-                font-weight: 700;
                 text-decoration: none;
-
-                &:hover {
-                    color: $black;
-                    &:after {
-                        content: " <"
-                    }
+                &:after {
+                    content: " <";
                 }
             }
+
         }
     }
 }

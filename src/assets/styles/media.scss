@@ -9,8 +9,21 @@
     .offer {
         text-align: left;
     }
+
     .menu__items {
         border-left: none;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+
+                &:after {
+                    content: "";
+                }
+            }
+        }
     }
 }
 
