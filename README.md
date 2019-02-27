@@ -13,12 +13,19 @@ Project for learning Bootstrap library
 ## Result
 https://wayup-ws-tinyone.surge.sh/
 
-## Screenshot mobile
+## Screenshots
 
-### First section
-![Mobile screenshot](https://i.imgur.com/CHANGEME.png)
+### Mobile
+![Mobile screenshot](https://i.imgur.com/q3UXJHe.png)
 
-## Screenshot desktop
+### Menu expanded on desktop small
+![desktop lg](https://i.imgur.com/OxqBBOV.png)
 
-### All sections
-![Screenshot](https://i.imgur.com/CHANGEME.png)
+### Desktop small
+![desktop lg](https://i.imgur.com/QmOWM2r.png)
+
+### Desktop medium
+![desktop lg](https://i.imgur.com/Hb4hRNN.png)
+
+### Desktop large
+![desktop lg](https://i.imgur.com/8cC1cdG.png)
