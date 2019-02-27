@@ -43,6 +43,8 @@ h3 {
 .header {
     padding-top: 61px;
     background-color: $yellow;
+    // fix for animate.css
+    overflow: hidden;
 }
 
 .menu {
