@@ -17,6 +17,7 @@
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous"
         />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
         <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.chunks.main.css %>" />
         <title>Tinyone</title>
         <script
@@ -38,7 +39,7 @@
     <body>
         <header class="header" id="header">
             <div class="container">
-                <nav class="menu navbar navbar-expand-md">
+                <nav class="menu navbar navbar-expand-md animated fadeInDown">
                     <a class="navbar-brand" href="#">
                         <img
                             src="<%= require('./assets/images/logo.png') %>"
@@ -73,7 +74,7 @@
                 </nav>
 
                 <div class="row d-flex align-items-center offer">
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 animated fadeInLeft">
                         <h1 class="offer__title">Inspire your inspiration</h1>
                         <p class="offer__intro">
                             Simple to use for your app, products<br />showcase and your inspiration
@@ -99,7 +100,7 @@
                         <img
                             src="<%= require('./assets/images/tablet.png') %>"
                             alt="Tinyone Application"
-                            class="tablet"
+                            class="tablet animated fadeInRight"
                         />
                     </div>
                 </div>
