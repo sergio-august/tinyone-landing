@@ -1,4 +1,4 @@
-# workshop-html-css-wayup-3
+# Responsive "Tinyone" layout
 Project for learning Bootstrap library
 
 - Bootstrap 4
